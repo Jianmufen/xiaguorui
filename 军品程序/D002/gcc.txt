@@ -1,0 +1,2 @@
+/usr/local/arm/3.4.1/arm-linux/bin/gcc -o weather weather.c -lpthread -lm
+/usr/local/arm/3.4.1/arm-linux/bin/gcc -o pcanhui pcanhui.c -lpthread -lm

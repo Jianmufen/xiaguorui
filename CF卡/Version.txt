@@ -1,0 +1,6 @@
+区域站(PTB210,PT100,EE180)	2016-06-13	WDJJ=40
+pcanhui中增加REMOVE命令清除data/下所有数据文件
+	 增加DATE、TIME命令中的对时校验
+weather中修正了风
+	 增加一次极值初始化
+weather-sjwj中增加一年自动删除文件；不生成S文件；选择性生成R文件

@@ -1,0 +1,30 @@
+ST16C554DIQ64		SN74LVC32APWR								AT91SAM9263-CU(主SoC)
+	CSA					EBI_A5											EBI0_A5		
+	CSB					EBI_A6											EBI0_A6		
+	CSC					EBI_A7											EBI0_A7		
+	CSD					EBI_A8											EBI0_A8		
+						EBI_nCS5										PD7/EBI0_NCS5/CFCS1/RTS1 
+	
+	INTA																PE12/KBDR0/ISI_D8
+	INTB																PE13/KBDR1/ISI_D9
+	INTC																PE14/KBDR2/ISI_D10
+	INTD																PE15/KBDR3/ISI_D11
+	
+	D0																	EBI0_D0
+	D1																	EBI0_D1
+	D2																	EBI0_D2
+	D3																	EBI0_D3
+	D4																	EBI0_D4
+	D5																	EBI0_D5
+	D6																	EBI0_D6
+	D7																	EBI0_D7
+	
+	A0																	EBI0_A2
+	A1																	EBI0_A3
+	A2																	EBI0_A4
+		
+	IOR																	EBI0_NRD/CFOE
+	IOW																	EBI0_NWE/NWR0/CFWE
+	
+																		
+	

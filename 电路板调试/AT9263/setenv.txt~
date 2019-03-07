@@ -1,0 +1,16 @@
+setenv serverip 192.168.0.254;setenv ipaddr 192.168.0.147;setenv ethaddr 00:00:86:22:44:44
+
+setenv bootargs mem=64M console=ttyS0 115200 root=/dev/ram0 initrd=0x21100000,0x800000 ip=192.168.0.147:192.168.0.254:192.168.0.1:255.255.255.0:::eth0:off
+
+setenv nf_kernel nand read 22200000 0 200000;setenv nf_ramdisk nand read 21100000 300000 600000;setenv boot bootm 22200000
+
+setenv bootcmd run nf_kernel\;run nf_ramdisk\;run boot;saveenv
+
+
+nand erase
+
+tftp 22200000 uImage_66M;tftp 21100000 ramdisk_anhui.gz
+
+nand write 22200000 0 200000
+
+nand write 21100000 300000 600000
